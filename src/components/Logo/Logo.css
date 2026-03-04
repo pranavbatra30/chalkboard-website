@@ -1,0 +1,138 @@
+.logo {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.logo-element-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--color-element-box);
+    border: 1.5px solid var(--color-element-border);
+    border-radius: 4px;
+    margin-right: 2px;
+    transition: all var(--transition-base);
+}
+
+.logo:hover .logo-element-box {
+    box-shadow: 0 0 12px rgba(25, 135, 84, 0.4);
+}
+
+.logo-atomic-number {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    color: var(--color-element-text);
+    font-weight: 700;
+    opacity: 0.9;
+    line-height: 1;
+}
+
+.logo-element-symbol {
+    color: #fff;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.logo-text {
+    color: var(--color-primary);
+    font-weight: 800;
+    transition: color var(--transition-base);
+}
+
+.logo:hover .logo-text {
+    color: #d4d6a8;
+}
+
+/* Size variants */
+.logo-sm .logo-element-box {
+    width: 28px;
+    height: 28px;
+}
+
+.logo-sm .logo-atomic-number {
+    font-size: 8px;
+}
+
+.logo-sm .logo-element-symbol {
+    font-size: 18px;
+}
+
+.logo-sm .logo-text {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.logo-sm .logo-element-box+.logo-text {
+    margin-right: 2px;
+}
+
+.logo-md .logo-element-box {
+    width: 34px;
+    height: 34px;
+}
+
+.logo-md .logo-atomic-number {
+    font-size: 10px;
+}
+
+.logo-md .logo-element-symbol {
+    font-size: 22px;
+}
+
+.logo-md .logo-text {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.logo-lg .logo-element-box {
+    width: 52px;
+    height: 52px;
+}
+
+.logo-lg .logo-atomic-number {
+    font-size: 14px;
+}
+
+.logo-lg .logo-element-symbol {
+    font-size: 36px;
+}
+
+.logo-lg .logo-text {
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.logo-lg .logo-element-box {
+    margin-right: 3px;
+}
+
+.logo-xl .logo-element-box {
+    width: 68px;
+    height: 68px;
+    border-width: 2px;
+    border-radius: 6px;
+}
+
+.logo-xl .logo-atomic-number {
+    font-size: 18px;
+    top: 4px;
+    left: 6px;
+}
+
+.logo-xl .logo-element-symbol {
+    font-size: 46px;
+}
+
+.logo-xl .logo-text {
+    font-size: 52px;
+    letter-spacing: 5px;
+}
+
+.logo-xl .logo-element-box {
+    margin-right: 4px;
+}
