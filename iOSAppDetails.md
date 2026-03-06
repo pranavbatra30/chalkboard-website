@@ -728,7 +728,6 @@ Granular Privacy Controls: Got a niche idea? Share your post only with verified 
 
 Role-Based Networking: Badges for Professors, Students, and Independent Researchers. Verified professors can even sponsor and invite their students directly to the platform.
 
-No DMs (Yet): To keep the focus strictly on collaborative science and reduce spam, there is no direct messaging. The community thrives in the comments and groups.
 
 2. Tailored Academic Content Creation
 Automated "Rich Card" Citations: Don't waste time typing out references. Paste an arXiv URL or DOI, and Chalkboard automatically fetches the metadata (Title, Authors, Abstract) into a clean, clickable card.

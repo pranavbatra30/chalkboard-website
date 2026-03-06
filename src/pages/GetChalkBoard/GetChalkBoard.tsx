@@ -17,7 +17,8 @@ const HIGHLIGHTS = [
  * and listing them here. They will render inside the placeholder grid.
  * Example: ['screenshot-1.png', 'screenshot-2.png', 'screenshot-3.png']
  */
-const SCREENSHOTS: string[] = [];
+const SCREENSHOTS: string[] = ['screenshot1.png', 'screenshot2.png', 'screenshot3.png'];
+
 
 function useReveal() {
     const ref = useRef<HTMLDivElement>(null);

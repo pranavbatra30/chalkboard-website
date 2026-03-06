@@ -161,7 +161,7 @@
     }
 
     .navbar-cta-desktop {
-        display: none;
+        display: none !important;
     }
 
     .navbar-mobile-toggle {

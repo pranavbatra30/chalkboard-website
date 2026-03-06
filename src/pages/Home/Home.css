@@ -501,8 +501,7 @@
 @media (max-width: 768px) {
     .hero {
         min-height: auto;
-        padding-top: calc(80px + var(--space-2xl));
-        padding-bottom: var(--space-2xl);
+        padding: calc(80px + var(--space-2xl)) var(--space-xl) var(--space-2xl) var(--space-xl);
     }
 
     .hero-scroll-indicator {
