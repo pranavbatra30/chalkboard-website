@@ -33,41 +33,43 @@ export default function Navbar() {
     }, [menuOpen]);
 
     return (
-        <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
-            <div className="container-lg navbar-inner">
-                <Link to="/" aria-label="ChalkBoard Home">
-                    <Logo size="sm" />
-                </Link>
+        <>
+            <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="navbar">
+                <div className="container-lg navbar-inner">
+                    <Link to="/" aria-label="ChalkBoard Home">
+                        <Logo size="sm" />
+                    </Link>
 
-                {/* Desktop links */}
-                <div className="navbar-links">
-                    {NAV_LINKS.map((link) => (
-                        <Link
-                            key={link.to}
-                            to={link.to}
-                            className={`navbar-link ${location.pathname === link.to ? 'active' : ''}`}
-                        >
-                            {link.label}
-                        </Link>
-                    ))}
+                    {/* Desktop links */}
+                    <div className="navbar-links">
+                        {NAV_LINKS.map((link) => (
+                            <Link
+                                key={link.to}
+                                to={link.to}
+                                className={`navbar-link ${location.pathname === link.to ? 'active' : ''}`}
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
+                    </div>
+
+                    {/* Desktop CTA */}
+                    <Link to="/get-chalkboard" className="btn btn-primary navbar-cta navbar-cta-desktop">
+                        Download App
+                    </Link>
+
+                    {/* Mobile hamburger */}
+                    <button
+                        className={`navbar-mobile-toggle ${menuOpen ? 'open' : ''}`}
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        aria-label="Toggle menu"
+                    >
+                        <span />
+                        <span />
+                        <span />
+                    </button>
                 </div>
-
-                {/* Desktop CTA */}
-                <Link to="/get-chalkboard" className="btn btn-primary navbar-cta navbar-cta-desktop">
-                    Download App
-                </Link>
-
-                {/* Mobile hamburger */}
-                <button
-                    className={`navbar-mobile-toggle ${menuOpen ? 'open' : ''}`}
-                    onClick={() => setMenuOpen(!menuOpen)}
-                    aria-label="Toggle menu"
-                >
-                    <span />
-                    <span />
-                    <span />
-                </button>
-            </div>
+            </nav>
 
             {/* Mobile overlay */}
             <div
@@ -92,6 +94,6 @@ export default function Navbar() {
                     </Link>
                 </div>
             </div>
-        </nav>
+        </>
     );
 }

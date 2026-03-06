@@ -504,6 +504,10 @@
         padding: calc(80px + var(--space-2xl)) var(--space-xl) var(--space-2xl) var(--space-xl);
     }
 
+    .hero-content {
+        padding: 0 var(--space-md);
+    }
+
     .hero-scroll-indicator {
         display: none;
     }
