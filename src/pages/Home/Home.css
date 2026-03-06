@@ -501,11 +501,11 @@
 @media (max-width: 768px) {
     .hero {
         min-height: auto;
-        padding: calc(80px + var(--space-2xl)) var(--space-xl) var(--space-2xl) var(--space-xl);
+        padding: calc(80px + var(--space-2xl)) 0 var(--space-2xl) 0;
     }
 
     .hero-content {
-        padding: 0 var(--space-md);
+        padding: 0 var(--space-lg);
     }
 
     .hero-scroll-indicator {
